@@ -1,0 +1,14 @@
+ensure virtualenv package is installed
+to create virtual env for for project type 'virtualenv <envname>' *env name for this project is 'djangojob'
+to activate virtual env on:
+    Mac: source <envname>/bin/activate
+    Windows: source <envname>/scripts/activate
+run: pip install django
+to verify installation run: pip list
+to create django project/backend: django-admin startproject <serverfoldername>
+to install packages used in app: pip install boto3 django-cors-headers django-dotenv django-filter
+django-storages djangorestframework djangorestframework-simplejwt geocoder gunicorn whitenoise psycopg2 dj-database-url
+
+to start app: python3 manage.py runserver
+
+to install dependencies in requirements.txt: pip install -r requirements.txt
