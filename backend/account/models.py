@@ -12,7 +12,7 @@ class UserProfile(models.Model):
 @receiver(post_save, sender=User)
 def save_profile(sender, instance, created, **kwargs):
     user = instance
-
+    print('instance: ', instance)
     if created:
         profile = UserProfile(user=user)
         profile.save()
